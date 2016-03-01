@@ -1,0 +1,15 @@
+@mainColor: #51c28a;
+@subColor: #8a908c;
+
+
+@greenBackgroundColor: #51c28a;
+@greyBackgroundColor: #fbfdf8;
+@whiteBackgroundColor: #fff;
+
+
+
+.setBackgroundImage(@imagePath, @extendName: 'png') {
+    background-image: url("../images/@{imagePath}.@{extendName}");
+    background-image: -webkit-image-set(url("../images/@{imagePath}.@{extendName}") 1x,
+                        url("../images/@{imagePath}@2x.@{extendName}") 2x);
+}

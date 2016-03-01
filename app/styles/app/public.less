@@ -1,0 +1,83 @@
+@import "./lib.less";
+/* Custom CSS
+ * --------------------------------------- */
+
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: ' ';
+    overflow: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+.fl {
+    float: left !important;
+}
+
+.fr {
+    float: right !important;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, body{
+    margin: 0;
+}
+
+html {
+    background-image: linear-gradient(to bottom, #0063c9, #001539);
+}
+
+body{
+    font-family: Helvetica,arial, "Hiragino Sans GB",sans-serif;
+    font-size: 12px;
+    // line-height: 1;
+    color: #333;
+
+    background-image: repeating-linear-gradient(-45deg,
+              #1c81d4 0px, #1c81d4 1px, transparent 0, transparent 4px);
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    min-height: 100%;
+    margin: 0 auto;
+
+    padding-bottom: 82px;
+
+    background-color: #fff;
+
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    box-sizing: border-box;
+}

@@ -1,0 +1,88 @@
+{
+  "name": "codetest",
+  "version": "0.0.0",
+  "author": "Frontend Team from MagiCare",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.magicare.me/web/{app_name}.git"
+  },
+  "keywords": [
+    "gulp",
+    "browserify",
+    "angular",
+    "less",
+    "karma",
+    "jasmine",
+    "protractor",
+    "boilerplate"
+  ],
+  "private": true,
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "browser": {
+    "jquery": "./app/bower/jquery/dist/jquery.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": {
+      "exports": "jQuery"
+    }
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browser-sync": "^2.7.6",
+    "browserify": "^5.10.0",
+    "browserify-istanbul": "^0.2.0",
+    "browserify-ngannotate": "^0.1.0",
+    "browserify-shim": "^3.8.10",
+    "glob": "~5.0.15",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-buffer": "*",
+    "gulp-changed": "^1.0.0",
+    "gulp-connect": "~2.2.0",
+    "gulp-file-include": "^0.13.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-gzip": "^0.0.8",
+    "gulp-htmlmin": "~1.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^1.1.0",
+    "gulp-jshint": "^1.8.3",
+    "gulp-less": "^3.0.3",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-notify": "^2.0.0",
+    "gulp-protractor": "0.0.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-rename-dir": "git+ssh://git@gitlab.magicare.me:node-modules/gulp-rename-dir.git",
+    "gulp-rev": "~6.0.1",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-streamify": "0.0.5",
+    "gulp-swig": "~0.7.4",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "object-assign": "^4.0.1",
+    "pretty-hrtime": "^0.2.2",
+    "rimraf": "^2.4.3",
+    "run-sequence": "^0.3.6",
+    "through2": "^2.0.0",
+    "uglifyify": "^2.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^2.0.0",
+    "yargs": "^3.19.0"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "karma start test/karma.conf.js",
+    "build": "gulp",
+    "start": "NODE_ENV=dev gulp dev"
+  },
+  "dependencies": {}
+}

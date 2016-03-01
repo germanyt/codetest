@@ -1,0 +1,14 @@
+{
+  "name": "codetest",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "**/bower"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "normalize.css": "~3.0.3"
+  }
+}
